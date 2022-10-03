@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Tag selector */
+        body {
+            background-color: rgb(164, 136, 190);
+            color: azure
+        }
+
+        li {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: brown;
+        }
+
+        /* Class selector */
+        .title {
+            color: rgb(209, 146, 51);
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        /* Id Selector */
+        #list-title {
+            color: chartreuse;
+        }
+
+        /* All children */
+        main ul {
+            list-style: none;
+        }
+
+        /* Direct child */
+        main>p, .footer>ul{
+            background-color: cornflowerblue;
+        }
+        .utku{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2 class="title line-through">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, provident.
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto a quod, nostrum sint dicta
+            molestiae obcaecati, consectetur maxime labore repellendus! Consequuntur nesciunt vel voluptas doloremque
+            repellat eum, accusamus maxime!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto a quod, nostrum sint dicta
+                molestiae obcaecati, consectetur maxime labore repellendus! Consequuntur nesciunt vel voluptas doloremque
+                repellat eum, accusamus maxime!</p>
+        <ul>
+            <h3 class="title" id="list-title">List Title</h3>
+            <li>Lorem-1</li>
+            <li>Lorem-2</li>
+            <li>Lorem-3</li>
+            <li>Lorem-4</li>
+        </ul>
+        <ul>
+            <h3 class="title">Lorem, ipsum dolor.</h3>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>
+                <ul class="utku">
+                    <p>Not direct child p tag</p>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+    <div class="footer">
+        <p>This is the footer</p>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        /* Css Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .box {
+            background: #f4f4f4;
+            border: 2px solid #333;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            padding: 12px 10px;
+            height: 190px;
+            
+        }
+
+        .box p,
+        .box h3 {
+            text-align: left;
+            text-align: right;
+            text-align: center;
+           
+        }
+
+        #box-2 {
+            width: 65%;
+            float: left;
+        }
+
+        #box-3 {
+            width: 34%;
+            float: right;
+        }
+
+        .clr{
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h3>Heading-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique dolorem ad ratione eligendi
+                accusantium in reiciendis placeat veniam distinctio perferendis qui, cupiditate at minima! Expedita,
+                provident eos voluptate obcaecati alias perferendis voluptatibus vel possimus iste, suscipit nam optio
+                fugiat!</p>
+        </div>
+        <div class="box" id="box-2">
+            <h3>Heading-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique dolorem ad ratione eligendi
+                accusantium in reiciendis placeat veniam distinctio perferendis qui, cupiditate at minima! Expedita,
+                provident eos voluptate obcaecati alias perferendis voluptatibus vel possimus iste, suscipit nam optio
+                fugiat!</p>
+        </div>
+        <div class="box" id="box-3">
+            <h3>Heading-3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique dolorem ad ratione eligendi
+                accusantium in reiciendis placeat veniam distinctio perferendis qui, cupiditate at minima! Expedita,
+                provident eos voluptate obcaecati alias perferendis voluptatibus vel possimus iste, suscipit nam optio
+                fugiat!</p>
+        </div>
+        <div class="clr"></div>
+        <div class="box" id="box-4">
+            <h3>Heading-4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique dolorem ad ratione eligendi
+                accusantium in reiciendis placeat veniam distinctio perferendis qui, cupiditate at minima! Expedita,
+                provident eos voluptate obcaecati alias perferendis voluptatibus vel possimus iste, suscipit nam optio
+                fugiat!</p>
+        </div>
+    </div>
+</body>
+
+</html>

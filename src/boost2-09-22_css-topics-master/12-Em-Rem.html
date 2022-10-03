@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em & Rem</title>
+    <style>
+        /* html{
+            font-size: 30px;
+        } */
+
+        div {
+            /* font-size: 10px;
+            padding: 2em; */
+        }
+
+        div p {
+            /* font-size: 20px;
+            margin:1.5em; */
+            /* em en yakindan alir */
+            /* 1.5em * 20px = 30px */
+        }
+
+        h3 {
+            /* margin: 2em; */
+        }
+
+        ul {
+            /* font-size: 1.5em; */
+            /* Rem her zaman roottan alir */
+            /*         16 * 1.5 = 24px */
+            font-size: 1.5rem;
+            padding: 2rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione nihil consequatur libero impedit
+            repellat fugiat omnis voluptatum tempore praesentium.</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

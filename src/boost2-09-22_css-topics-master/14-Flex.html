@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        max-width: 900px;
+        height: 900px;
+        border: 2px solid brown;
+
+        display: flex;
+
+        /* default */
+        flex-direction: row;
+        /* flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+
+        flex-flow: row wrap-reverse; */
+
+        /* Main axis uzerinde hizalar */
+        /* justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+
+
+        
+        /* align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        align-items: stretch;
+        align-items: baseline; */
+        
+        /* justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        
+        align-content: center; */
+
+        /* gap:10px 20px; */
+
+        /* justify-content: space-evenly; */
+    }
+
+    .box{
+        border: 2px solid #333;
+        height: 100px;
+        width: 100px;
+        /* flex-shrink: 0; */
+    }
+
+    /* #box-3, #box-5{
+        height: 140px;
+    }
+    #box-4, #box-7{
+        height: 70px;
+    }
+    #box-6{
+        height: 200px;
+    } */
+
+    #box-4{
+        /* order:1; */
+        /* flex-grow: 1; */
+        /* flex-shrink: 4;
+        flex-basis: 300px; */
+        flex:1;
+        align-self: center;
+    }
+    #box-3{
+        order:-1;
+        /* flex-grow: 3; */
+        flex:2;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+    </div>
+</body>
+
+</html>
